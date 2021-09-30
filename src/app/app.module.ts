@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CenteredContainerComponent } from './centered-container/centered-container.component';
+
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        CenteredContainerComponent
     ],
     imports: [
         BrowserModule,
