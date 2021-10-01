@@ -4,14 +4,14 @@ import { CenteredContainerComponent } from "./centered-container/centered-contai
 
 const routes: Routes = [
     {
-        path: "centeredcontainer",
+        path:      "centeredcontainer",
         component: CenteredContainerComponent
     },
     // Default route
     {
-        path: "",
+        path:       "",
         redirectTo: "centeredcontainer",
-        pathMatch: "full"
+        pathMatch:  "full"
     },
     // 404 route
     // {
