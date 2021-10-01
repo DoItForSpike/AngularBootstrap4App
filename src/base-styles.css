@@ -6,12 +6,6 @@
     bottom: 0;
 }
 
-.fill-parent-height {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-}
-
 .flex-column {
     display: flex;
     flex-direction: column;
