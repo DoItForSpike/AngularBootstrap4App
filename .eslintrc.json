@@ -1,0 +1,108 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/ng-cli-compat",
+        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": [
+              // Index signature
+              "signature",
+              // Static
+              "private-static-field",
+              "protected-static-field",
+              "public-static-field",
+              "private-static-method",
+              "protected-static-method",
+              "public-static-method",
+              // Private fields
+              "private-decorated-field",
+              "private-instance-field",
+              "private-abstract-field",
+              "protected-decorated-field",
+              "protected-instance-field",
+              "protected-abstract-field",
+              "public-decorated-field",
+              "public-instance-field",
+              // Constructors
+              "public-constructor",
+              "protected-constructor",
+              "private-constructor",
+              "public-abstract-field",
+              // Methods
+              "public-decorated-method",
+              "public-instance-method",
+              "public-abstract-method",
+              // Protected helper methods
+              "protected-decorated-method",
+              "protected-instance-method",
+              "protected-abstract-method",
+              // Private helper methods
+              "private-decorated-method",
+              "private-instance-method",
+              "private-abstract-method"
+            ]
+          }
+        ],
+        "@typescript-eslint/quotes": [
+          "error",
+          "double",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "@typescript-eslint/semi": [
+          "error",
+          "always"
+        ],
+        "quotes": "off",             // Needs to be off when @typescript-eslint/quotes is on
+        "semi": "off"                // Needs to be off when @typescript-eslint/semi is on
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
