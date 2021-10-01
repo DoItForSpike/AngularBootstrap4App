@@ -1,18 +1,13 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
     selector:    "app-centered-container",
     templateUrl: "./centered-container.component.html",
     styleUrls:   ["./centered-container.component.css"]
 })
-export class CenteredContainerComponent implements OnInit
+export class CenteredContainerComponent
 {
-
-    constructor() { }
-
-    ngOnInit(): void
+    constructor()
     {
-        console.log("");
     }
-
 }
