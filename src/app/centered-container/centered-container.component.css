@@ -1,0 +1,15 @@
+.page-centered-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.gutter {
+    flex: 1.5 2 auto;
+    background-color: rgba(230, 230, 230, 0.3);
+}
+
+.content-column {
+    flex: 1 1 auto;
+}
