@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { CenteredContainerComponent } from './centered-container.component';
+import { CenteredContainerComponent } from "./centered-container.component";
 
-describe('CenteredContainerComponent', () => {
+describe("CenteredContainerComponent", () => {
   let component: CenteredContainerComponent;
   let fixture: ComponentFixture<CenteredContainerComponent>;
 
@@ -19,7 +19,7 @@ describe('CenteredContainerComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
